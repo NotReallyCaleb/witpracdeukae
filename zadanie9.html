@@ -1,0 +1,19 @@
+<html>
+<body>
+<div style="color:darkgreen;font-size:35px;">
+ <script language="JavaScript">
+var dzien1=prompt("Dzien 1=","");
+var godzina1=prompt("Godzina 1=","");
+var dzien2=prompt("Dzien 2=","");
+var godzina2=prompt("Godzina 2=","");
+var suma;
+ var D1_kuc=parseFloat(dzien1);
+ var G1_kuc=parseFloat(godzina1);
+ var D2_kuc=parseFloat(dzien2);
+ var G2_kuc=parseFloat(godzina2);
+ suma=(D1_kuc*24*60*60+G1_kuc*60*60)-(D2_kuc*24*60*60+G2_kuc*60*60);
+ document.write("D1:"+D1_kuc+"<br>G1:"+G1_kuc+"<br> D2: "+D2_kuc+"<br>G2:"+G2_kuc+"<br> Ilość sekund: "+suma+" sekund<br>");
+ </script>
+</div>
+</body>
+</html>
