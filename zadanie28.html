@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function dom(metraz_k,ilosc_pokoi_k,cena_k)//początek konstruktora
+            {
+                this.metraz=metraz_k;
+                this.ilosc_pokoi=ilosc_pokoi_k;
+                this.cena=cena_k;
+            }//koniec konstruktora
+            dom.prototype.wypisz = function () //definicja metody
+            {
+                alert(this.metraz + ' ' + this.ilosc_pokoi+ ' ' + this.cena);
+            };
+            var dom1 = new dom("Metraż: 160 m^2 <br>", "Liczba pokoi: 7 <br>", "Cena: 9500 zł/m^2"); // nowy obiekt osoba1
+            var dom2 = new dom('Metraż: 80 m^2 <br>', 'Liczba pokoi: 4 <br>', 'Cena: 15500 zł/m^2');
+            dom1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+            dom2.wypisz();
+            document.write("dostęp do właściwości"+"<br>");
+            // poniżej dostęp do pól osoby1
+            document.write("Dom pierwszy:"+" "+dom1.metraz+" "+dom1.ilosc_pokoi+" "+dom1.cena+"<br>");
+            document.write("Dom drugi:"+" "+dom2.metraz+" "+dom2.ilosc_pokoi+" "+dom2.cena);
+        </script>
+    </head>
+    <body>
+        <br>
+        programowanie obiektowe
+    </body>
+</html>
